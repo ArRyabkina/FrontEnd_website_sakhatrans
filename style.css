@@ -15,24 +15,25 @@ body {
     margin-right: auto;
 }
 
-.top {
+.top-color {
     background: #4366AB;
-    height: 32px;
-    display: flex;
-    padding-left: 90px 
+}
+
+.top {
+    height: 32px; 
 }
 
 .top a {
     color: #fff;
     text-decoration: none;
-    margin-right: 5px;
-    margin-left: 5px
+    margin-right: 8px;
+    margin-left: 8px
 }
 
 .top-menu {
     width: 145.44px;
     background: white;
-    padding: 6px 10px;
+    padding: 6px 8px;
     box-sizing: border-box; 
 }
 
@@ -90,7 +91,7 @@ body {
     height: 144px;
 }
 
-.center img {
+.header-main-img {
     margin-top: 25px;
     width: 472px;
     height: 74px;
@@ -101,19 +102,7 @@ body {
     float: right;
     margin-top: 50px;
     color: #363636;
-}
-
-.header-call-number {
-    font: 64px calibri-b;
-    margin-left: 12px;
-    color: #363636;
-    margin-top: 0;
-}
-
-.header-call-icon p {
-    margin: 0;
-    font-size: 64px;
-    
+    margin-bottom: 10px
 }
 
 .header-main img {
@@ -126,31 +115,25 @@ body {
     height: 23px;
     width: 166px;
     border: 1px solid #BFBFBF;
-    float: right;
     font: 14px calibri;
     padding: 0 23px 0 3px;
     margin-top: 50px;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 40px;
     
 }
 
 .header-call-text{
-    margin-left: 12px;
     color: #363636;
     height: 16px;
-    font-size: 16px
+    font-size: 13px
 }
 
 .header-call-icon img {
     width: 38px;
-    height: 64px;
+    height: 44px;
     margin: 0;
-    
-}
-
-.header-call p {
-    margin: 0
+    margin-right: 10px
 }
 
 .main-menu {
@@ -168,15 +151,13 @@ body {
     background: #fff;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     padding-bottom: 60px;
-    font: 14px myriad;
-    width: 940px;
+    font: 14px myriad
 }
 
 .page-left {
     width: 164px;
     margin-top: 35px;
     margin-left: 50px;
-    float: left;
     border-top: 1px solid #EBEBEB;
 }
 
@@ -195,17 +176,23 @@ body {
     padding: 10px 20px;
     width: 124px;
     border-top: 1px solid #EBEBEB;
-    
 }
+
+.page-left-menu a:hover {
+    transition: 0.3s;
+    color: #818181
+} 
 
 .page-left-menu-1 {
     width: 164px;
-    float: left;
     padding: 10px 0;
     font-family: myriad-sb;
     text-decoration: none;
     border-bottom: 1px solid #EBEBEB;
-    
+}
+
+.strong a {
+    color: #2a2a2a;
 }
 
 .page-left-menu-1 a{
@@ -218,16 +205,23 @@ body {
     background: #EDEDED;
     font: 30px myriad-sb;
     margin-top: 35px;
-    width: 586px;
+    width: 816px;
     margin-left: 50px;
 }
 
 .page-body-sec {    
     margin-top: 40px;
     border-top: 1px solid #DBDBDB;
-    padding-bottom: 40px;
-    width: 626px;
-    margin-left: 50px
+    width: 856px;
+    margin-left: 50px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.page-body-img {
+    width: 487px;
+    height: 410px;
+    margin-top: 30px
 }
 
 .page-news {
@@ -235,7 +229,7 @@ body {
     padding-top: 30px;
     margin-right: 34px;
     border-top: 1px solid #DBDBDB;
-        margin-top: 40px;
+    margin-top: 40px;
 }
 
 .page-links {
@@ -250,63 +244,114 @@ body {
     margin-left: 20px
 }
 
-.page-body-sec p{
-    width: 276px;
-    padding: 10px 0 10px 30px;
+.page-body-sec-text {
+    width: 326px;
     font-family: myriad-sb;
+    margin-left: 65px;
+    line-height: 20px;
+    margin-top: 30px
 }
 
-.page-body-sec div {
-    width: 320px;
+.page-body-sec a {
+    text-decoration: none;
+    color: #2429af
+}
+
+.page-block-info {
+    width: 854px;
+    height: 365px;
+    border: 1px solid #DBDBDB;
+    color: #6f6f6f;
+    margin-bottom: 20px
+}
+
+.page-block-info-text {
+    margin: 30px 30px;
+}
+
+.page-block-info-text h2{
+    color: black;
+    font-size: 20px;
+    margin: 0
+}
+
+.page-block-info img {
+    width: 312px;
+    height: 363px;
 }
 
 .page-content {
-    width: 586px;
+    width: 860px;
     margin-top: 20px;
     padding: 10px 20px;
-    margin-left: 20px
+    margin-left: 20px;
+    line-height: 20px;
 }
 
 .page-news {
-    width: 642px;
+    width: 880px;
     padding-top: 30px;
-    margin-right: 34px;
+    margin-right: 50px;
     margin-top: 40px;
     border-top: 1px solid #DBDBDB;
+    padding-top: 45px;
+}
+
+.page-news-hover {
+    margin: 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d3d3d3;
+    position: relative;
+}
+
+.page-news-hover:hover {
+    background: #c0c0c0;
+    transition: 0.3s
 }
 
 .page-news-1 {
-    width: 198px;
-    margin-right: 16px;
-    border: 1px solid #d3d3d3
+    width: 273px;
+    margin-right: 18px;
+    margin-top: 25px;
 }
 
 .page-news-1-a {
-    text-decoration: none
+    text-decoration: none;
+    margin: 0;
+    height: 0
 }
 
 .page-news-1-a h2 {
-    width: 156px;
-    font-size: 15px;
+    width: 231px;
+    font-size: 18px;
     margin-left: 20px;
     margin-top: 0;
     font-family: tahoma;
-    color: black
+    color: black;
+    line-height: 20px;
+    margin-bottom: 2px
 }
 
 .page-news-1-a p {
-    width: 156px;
-    font-size: 7px;
+    font-size: 12px;
     margin-left: 20px;
     margin-top: 5px;
-    font: 14px tahoma;
-    color: grey;
+    width: 231px;
+    line-height: 14px;
+    font-family: tahoma;
+    color: #000
     
 }
 
+.page-news-data {
+    color: #808080;
+    margin-bottom: 20px
+}
+
 .page-news-1-a img {
-        width: 198px;
-    height: 110px;
+    width: 273px;
+    height: 148px;
     margin: 0
 }
 
@@ -314,34 +359,50 @@ body {
     padding: 50px 0 0;
     background: #3F64A9;
     color: #fff;
+    height: 330px
+}
+
+.footer-box {
+    width: 240px;
+    margin-left: 40px;
+    margin-right: 90px
+}
+
+.footer-box ul {
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+    line-height: 18px;
+    margin: 0;
+    margin-top: 10px
+}
+
+.footer-box p {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0
 }
 
 .wrapper {
     width: 240px;
-    margin: 0 auto;
-    text-align: center;
+    margin-left: 40px;
+}
+
+.wrapper p {
+    font-size: 17px
 }
 
 .footer-contacts {
     width: 240px;
     margin-top: 15px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .footer a {
-    margin: 0 auto;
+    text-decoration: none;
+    color: white
 }
 
-.links {
-    margin: 0 auto;
-}
-
-.footer-botom {
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    background: #202735;
-    margin-top: 50px;
-    padding: 50px 0 0;
+.footer-bottom {
+    background-image: url('footer-bottom.png');
+    height: 50px
 }
